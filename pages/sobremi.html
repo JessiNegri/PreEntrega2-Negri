@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Este título se ve en la pestaña-->
+    <title>MARBARBARO</title>
+    <!--Antes de mis estilos en css linkeo bootstrap, ya que funciona en cascada y sino me pisa los estilos-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Vinculo íconos de fontawesome-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <!--Vinculo el archivo css-->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!--El estilo de fuente que elegi para mi sitio web-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Menú de navegación-->
+    <nav class="navbar">
+        <!--Logo y nombre de la marca-->
+        <div class="logo">
+            <img src="/assets/img/Logo.jpeg" alt="Logo de la marca">
+            <span>MARBARBARO</span>
+        </div>
+        <!--Checkbox oculto-->
+        <input type="checkbox" id="menu-checkbox">
+        <!--Menu hamburguesa-->
+        <label for="menu-checkbox" class="menu-hamburguesa">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+        <!--Lista no ordenada de mi menú de navegación-->
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li class="submenu-container"><a href="tienda.html" class="tienda-btn">Tienda</a>
+                <!--Menu de tienda desplegable-->
+                <ul class="submenu">
+                    <li><a href="">Ceniceros</a></li>
+                    <li><a href="">Cuencos</a></li>
+                    <li><a href="">Deco</a></li>
+                    <li><a href="">Macetas</a></li>
+                    <li><a href="">Mates</a></li>
+                    <li><a href="">Portasahumerios</a></li>
+                    <li><a href="">Tazas</a></li>
+                    <li><a href="">Teteras</a></li>
+                </ul>
+            </li>
+            <li><a href="talleres.html">Talleres</a></li>
+            <li><a href="sobremi.html">Sobre mí</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+        </ul>
+        <!--Búsqueda y carrito-->
+        <div class="nav-right d-flex align-items-center">
+        <!-- Formulario de búsqueda -->
+            <form class="search-box d-flex">
+                <input type="text" class="form-control" placeholder="Buscar..." name="search">
+                <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+            </form>
+        <!-- Ícono del carrito -->
+            <a href="carrito.html" class="cart-icon position-relative ms-3">
+                <i class="fas fa-shopping-cart fa-lg"></i>
+                <span class="cart-count badge bg-danger position-absolute top-0 start-100 translate-middle">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <h5>SOBRE MI</h5>
+    <section class="sobremi">
+        <div class="container-sobremi">
+            <!-- Primera sección: Nombre y foto -->
+            <div class="section-sobremi">
+                <div class="text-sobremi">
+                    <h1>Jessica Negri</h1>
+                    <p>Diseñadora de productos de cerámica</p>
+                </div>
+                <div class="image-sobremi">
+                    <img src="/assets/img/sobremi (1).jpg" alt="Foto haciendo cerámica">
+                </div>
+            </div>
+    
+            <!-- Segunda sección: Foto del taller y descripción -->
+            <div class="section-sobremi">
+                <div class="image-sobremi">
+                    <img src="/assets/img/taller3.jpg" alt="Foto del taller de cerámica">
+                </div>
+                <div class="text-sobremi">
+                    <p>"¡Hola! Soy Jessica Negri y mi camino con la cerámica comenzó en Bariloche, un lugar donde no solo descubrí mi pasión, sino que también me encontré a mí misma. Sentí una conexión inmediata con el barro, empecé a investigar, a experimentar y, sin darme cuenta, me enamoré del proceso. Modelar, jugar con las formas y dejar que la creatividad fluya se convirtió en mi refugio, un espacio donde encuentro calma, expresión y fortaleza.
+                    Así nació Mar Bárbaro, un nombre que surge de dos pilares que me inspiran y acompañan. Más que una palabra, representa la fuerza, la belleza y el poder de crear con nuestras propias manos, como lo hacen todas las mujeres que pasan por acá."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Esta section me redirige a todas las pestañas para no volver a subir -->
+        <section class="footer-container">
+            <div class="footer-column">
+                <h5>Categorías</h5>
+                <ul class="enlaces-footer">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="talleres.html">Talleres</a></li>
+                    <li><a href="sobremi.html">Sobre mí</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="ubicacion.html">Ubicación</a></li>
+                </ul>
+            </div>
+            <hr class="footer-divider">
+    
+            <!-- Medios de pago -->
+            <div class="footer-column">
+                <h5>Métodos de pago</h5>
+                <p>Aceptamos:</p>
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-amex"></i>
+                <i class="fa-brands fa-paypal"></i>
+            </div>
+            <hr class="footer-divider">
+    
+            <!-- Contacto -->
+            <div class="footer-column">
+                <h5>Contactame</h5>
+                <i class="fa-brands fa-whatsapp"></i>
+                <p>+543548695432</p>
+                <i class="fa-regular fa-envelope"></i>
+                <p>E-mail <a href="mailto:marbarbaro@gmail.com" class="mail-footer">marbarbaro@gmail.com</a></p>
+            </div>
+            <hr class="footer-divider">
+    
+            <!-- Redes Sociales -->
+            <div class="footer-column">
+                <h5>Síguenos en redes sociales:</h5>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-square-pinterest"></i>
+                <i class="fa-brands fa-square-youtube"></i>
+            </div>
+        </section>
+        <div class="todos-los-derechos">
+            <p>&copy; MARBARBARO | 2025 - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!--El script siempre va al final, antes de que termine body; sirve para evitar demoras en la carga del sitio-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
