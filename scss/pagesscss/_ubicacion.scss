@@ -1,0 +1,35 @@
+/*Ubicacion*/
+.ubicacion {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--color-secundario);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 900px;
+    .container-ubicacion {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .section-ubicacion {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid #ccc;
+            &:last-child {
+                border-bottom: none;
+            .text-ubicacion, 
+            .contacto-info {
+                width: 20%;
+            }
+            .ubi-local iframe,
+            .ubi-taller iframe {
+                width: 500px;
+                height: 250px;
+                border-radius: 8px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+/*Menu de navegación*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-destacado);
+    padding: 15px 30px;
+    .logo {
+        display: flex;
+        align-items: center;
+        img {
+            width: 100px;
+            height: auto;
+            margin-right: 10px;
+        }
+    }
+}

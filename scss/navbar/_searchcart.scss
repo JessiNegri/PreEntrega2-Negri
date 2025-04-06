@@ -1,0 +1,38 @@
+/*Búsqueda y carrito*/
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+#carouselExampleDark { 
+    img {
+        object-fit: cover;
+        height: 700px;
+        width: 100%; 
+}
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--color-secundario);
+    p {
+        max-width: 800px;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        color: var(--color-texto);
+        margin: 0;
+    }
+}
+
+.search-box {
+    input {
+        padding: 5px;
+        border: 1px solid var(--color-texto);
+        border-radius: 5px;
+}
+}

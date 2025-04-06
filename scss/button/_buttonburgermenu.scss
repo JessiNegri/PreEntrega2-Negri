@@ -1,0 +1,15 @@
+/*Botón hamburguesa (oculto en desktop)*/
+.menu-hamburguesa {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 35px;
+    height: 30px;
+    justify-content: space-between;
+    div {
+        width: 30px;
+        height: 4px;
+        background-color: var(--color-texto);
+        transition: 0.3s;
+    }
+}

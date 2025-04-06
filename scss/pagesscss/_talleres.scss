@@ -1,0 +1,23 @@
+/*Estilos talleres*/
+.image-talleres {
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 20px;
+    }
+}
+
+.text-container-taller {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+    margin: 15px;
+}
+
+.text-container-aditional {
+    text-align: left;
+    color: var(--color-texto);
+    margin: 15px;
+}

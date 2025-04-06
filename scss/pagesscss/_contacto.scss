@@ -1,0 +1,26 @@
+/*Estilos seccion contacto*/
+.contacto-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: var(--color-secundario);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 900px;
+    .contacto-info {
+        width: 45%;
+        p {
+            margin: 5px 0;
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

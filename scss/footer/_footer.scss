@@ -1,0 +1,90 @@
+/*Estilos del footer*/
+footer {
+    background-color: var(--color-destacado);
+    padding: 20px 0;
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        .footer-divider {
+            width: 100%;
+            border-top: 1px solid black;
+            margin: 20px 0;
+        }
+        .footer-column {
+            flex: 1;
+            padding: 10px;
+            margin: 10px;
+            h5 {
+                font-size: 18px;
+                margin-bottom: 10px;
+                color: #333;
+            }
+            i {
+                margin-right: 15px;
+            }
+            .fa-brands {
+                margin-right: 10px;
+                font-size: 25px; /* Tamaño más grande para íconos sociales */
+            }
+            .fa-regular {
+                margin-right: 10px;
+                font-size: 20px; /* Tamaño normal para íconos de contacto */
+            }
+            .mail-footer {
+                color: var(--color-texto);
+                text-decoration: none;
+                &:hover {
+                    color: var(--color-texto);
+                }
+            }
+            .enlaces-footer {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                li {
+                    margin-bottom: 5px;
+                    a {
+                        text-decoration: none;
+                        color: #333;
+                        transition: color 0.3s;
+                        &:hover {
+                            color: var(--color-texto);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .todos-los-derechos {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 20px;
+        margin-right: 10px;
+        font-size: 15px;
+        color: var(--color-texto);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

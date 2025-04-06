@@ -1,0 +1,26 @@
+/*queries footer*/
+/* Tablets (hasta 768px) */
+@media (max-width: 768px) {
+    .footer-container {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .footer-column {
+        flex: none;
+        padding: 10px 20px;
+        &:not(:last-child) {
+            border-bottom: 1px solid #ccc;
+        }
+    }
+    
+    footer {
+        .fa-brands {
+        margin-right: 15px;
+        font-size: 30px;
+        }
+        .fa-regular {
+            margin-right: 10px;
+        }
+    }
+}

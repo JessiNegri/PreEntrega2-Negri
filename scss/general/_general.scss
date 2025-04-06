@@ -1,0 +1,71 @@
+@use '../general/variables' as *;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Variables de colores*/
+body {
+    background-color: $color-fondo;
+    color: $color-texto;
+}
+
+.menu-hamburguesa {
+    div{
+        background-color: $color-texto;
+    }
+}
+
+.nav-links {
+    background-color: $color-destacado;
+}
+
+/*Estilos generales*/
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+/* Estilos generales para cada card */
+.todas-las-card {
+    background: var(--color-fondo);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    width: 100%; /* Se adaptan al grid */
+}
+
+

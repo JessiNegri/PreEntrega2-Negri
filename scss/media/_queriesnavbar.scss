@@ -1,0 +1,111 @@
+/*Tablets y móviles */
+@media (max-width: 992px) {
+    /* Mostrar el menú hamburguesa */
+    .menu-hamburguesa {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 101;
+    }
+    
+    /* Ocultar la navegación por defecto */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-destacado);
+        text-align: center;
+        padding: 20px 0;
+        z-index: 100;
+        li {
+            margin: 10px 0;
+        }
+    }    
+    
+    /* Mostrar el menú cuando se hace clic en el checkbox */
+    #menu-checkbox:checked ~ .nav-links {
+        display: flex;
+    }
+    
+    /* Ajuste de menú desplegable en móvil */
+    .submenu {
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Asegurar que los íconos de búsqueda y carrito se ajusten bien */
+    .nav-right {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 10px;
+        .search-box input {
+            width: 70%;
+        }
+    }
+
+    .cart-icon {
+        margin-left: 10px;
+    }
+
+    /* Ajuste del logo */
+    .logo {
+        img {
+            width: 80px; /* Reducir el tamaño del logo en móviles */
+            height: auto;
+        }
+    }
+
+    .ver-mas-container {
+        justify-content: center;
+    }
+}
+    
+    /* Escritorio */
+    @media (min-width: 993px) {
+        .menu-hamburguesa {
+            display: none;
+        }
+    
+        .nav-links {
+            display: flex;
+            flex-direction: row;
+        }
+    
+        .submenu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: none;
+        }
+    
+        .submenu-container:hover .submenu {
+            display: block;
+        }
+    
+        /* Asegurar que el logo y la búsqueda/carrito se ajusten bien */
+        .nav-right {
+            display: flex;
+            align-items: center;
+        }
+    
+        .search-box {
+            input {
+                padding: 5px;
+                border: 1px solid var(--color-texto);
+                border-radius: 5px;
+            }
+        }
+    
+        /* Ajuste del logo */
+        .logo {
+            img {
+                width: 100px; /* Logo original en escritorio */
+            }
+        }
+    }

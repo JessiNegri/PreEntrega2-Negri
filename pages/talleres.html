@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Este título se ve en la pestaña-->
-    <title>MARBARBARO</title>
+    <title>MARBARBARO|Aprendé cerámica</title>
     <!--Antes de mis estilos en css linkeo bootstrap, ya que funciona en cascada y sino me pisa los estilos-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--Vinculo íconos de fontawesome-->
@@ -18,145 +18,147 @@
 </head>
 
 <body>
-    <!--Menú de navegación-->
-    <nav class="navbar">
-        <!--Logo y nombre de la marca-->
-        <div class="logo">
-            <img src="/assets/img/Logo.jpeg" alt="Logo de la marca">
-            <span>MARBARBARO</span>
-        </div>
-        <!--Checkbox oculto-->
-        <input type="checkbox" id="menu-checkbox">
-        <!--Menu hamburguesa-->
-        <label for="menu-checkbox" class="menu-hamburguesa">
-            <div></div>
-            <div></div>
-            <div></div>
-        </label>
-        <!--Lista no ordenada de mi menú de navegación-->
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li class="submenu-container"><a href="tienda.html" class="tienda-btn">Tienda</a>
-                <!--Menu de tienda desplegable-->
-                <ul class="submenu">
-                    <li><a href="">Ceniceros</a></li>
-                    <li><a href="">Cuencos</a></li>
-                    <li><a href="">Deco</a></li>
-                    <li><a href="">Macetas</a></li>
-                    <li><a href="">Mates</a></li>
-                    <li><a href="">Portasahumerios</a></li>
-                    <li><a href="">Tazas</a></li>
-                    <li><a href="">Teteras</a></li>
-                </ul>
-            </li>
-            <li><a href="talleres.html">Talleres</a></li>
-            <li><a href="sobremi.html">Sobre mí</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="ubicacion.html">Ubicación</a></li>
-        </ul>
-        <!--Búsqueda y carrito-->
-        <div class="nav-right d-flex align-items-center">
-        <!-- Formulario de búsqueda -->
-            <form class="search-box d-flex">
-                <input type="text" class="form-control" placeholder="Buscar..." name="search">
-                <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
-            </form>
-        <!-- Ícono del carrito -->
-            <a href="carrito.html" class="cart-icon position-relative ms-3">
-                <i class="fas fa-shopping-cart fa-lg"></i>
-                <span class="cart-count badge bg-danger position-absolute top-0 start-100 translate-middle">0</span>
-            </a>
-        </div>
-    </nav>
-
-    <h5>TALLERES</h5>
-    <!-- Foto del taller -->
-    <div class="image-talleres">
-        <img src="/assets/img/taller4.jpg" alt="Foto del taller de cerámica">
-    </div>
-    <!-- Sección del taller -->
-    <section>
-        <div class="text-container-taller">
-            <h6>EL TALLER</h6>
-            <p><em>"Más que un taller de cerámica, Mar Bárbaro es un refugio para desconectar del ruido, conectar con vos misma y descubrir la fortaleza que nace de crear con las manos. Acá no hay apuro ni perfección, solo el placer de modelar el barro, explorar texturas y dejar que la creatividad fluya.
-            Cada encuentro es una oportunidad para relajarte, compartir y sentir la energía única de un espacio pensado para la paz, la armonía y el disfrute. Ya sea que vengas a aprender desde cero o a perfeccionar tu técnica, en Mar Bárbaro siempre hay lugar para vos.
-            Animate a vivir la experiencia y descubrí el poder de crear con tus propias manos."</em></p>
-        </div>
-
-        <!--Cuadrícula con los tipos de talleres / enlace absoluto-->
-        <div class="cards-container">
-            <div class="todas-las-card">
-                <iframe src="https://www.youtube.com/embed/IGWbAp4XMic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    Ver Video
+    <header>
+        <!--Menú de navegación-->
+        <nav class="navbar">
+            <!--Logo y nombre de la marca-->
+            <div class="logo">
+                <img src="../assets/img/Logo.jpeg" alt="Logo de la marca">
+                <span>MARBARBARO</span>
+            </div>
+            <!--Checkbox oculto-->
+            <input type="checkbox" id="menu-checkbox">
+            <!--Menu hamburguesa-->
+            <label for="menu-checkbox" class="menu-hamburguesa">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <!--Lista no ordenada de mi menú de navegación-->
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="submenu-container"><a href="tienda.html" class="tienda-btn">Tienda</a>
+                    <!--Menu de tienda desplegable-->
+                    <ul class="submenu">
+                        <li><a href="">Ceniceros</a></li>
+                        <li><a href="">Cuencos</a></li>
+                        <li><a href="">Deco</a></li>
+                        <li><a href="">Macetas</a></li>
+                        <li><a href="">Mates</a></li>
+                        <li><a href="">Portasahumerios</a></li>
+                        <li><a href="">Tazas</a></li>
+                        <li><a href="">Teteras</a></li>
+                    </ul>
+                </li>
+                <li><a href="talleres.html">Talleres</a></li>
+                <li><a href="sobremi.html">Sobre mí</a></li>
+                <li><a href="contactoubi.html">Contacto</a></li>
+            </ul>
+            <!--Búsqueda y carrito-->
+            <div class="nav-right d-flex align-items-center">
+            <!-- Formulario de búsqueda -->
+                <form class="search-box d-flex">
+                    <input type="text" class="form-control" placeholder="Buscar..." name="search">
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                </form>
+            <!-- Ícono del carrito -->
+                <a href="carrito.html" class="cart-icon position-relative ms-3">
+                    <i class="fas fa-shopping-cart fa-lg"></i>
+                    <span class="cart-count badge bg-danger position-absolute top-0 start-100 translate-middle">0</span>
                 </a>
-                <div class="card-body">
-                    <h5 class="card-title">Técnica de pellizco</h5>
-                    <p class="card-text">Te muestro paso a paso cómo hacer modelado en pellizco.</p>
-                    <a href="tienda.html" class="btn btn-primary">Tienda</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>TALLERES</h1>
+        <!-- Foto del taller -->
+        <div class="image-talleres">
+            <img src="../assets/img/taller4.jpg" alt="Foto del taller de cerámica">
+        </div>
+        <!-- Sección del taller -->
+        <section>
+            <div class="text-container-taller">
+                <h3>EL TALLER</h3>
+                <p><em>"Más que un taller de cerámica, Mar Bárbaro es un refugio para desconectar del ruido, conectar con vos misma y descubrir la fortaleza que nace de crear con las manos. Acá no hay apuro ni perfección, solo el placer de modelar el barro, explorar texturas y dejar que la creatividad fluya.
+                Cada encuentro es una oportunidad para relajarte, compartir y sentir la energía única de un espacio pensado para la paz, la armonía y el disfrute. Ya sea que vengas a aprender desde cero o a perfeccionar tu técnica, en Mar Bárbaro siempre hay lugar para vos.
+                Animate a vivir la experiencia y descubrí el poder de crear con tus propias manos."</em></p>
+            </div>
+    
+            <!--Cuadrícula con los tipos de talleres / enlace absoluto-->
+            <div class="cards-container">
+                <div class="todas-las-card">
+                    <iframe src="https://www.youtube.com/embed/IGWbAp4XMic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        Ver Video
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Técnica de pellizco</h5>
+                        <p class="card-text">Te muestro paso a paso cómo hacer modelado en pellizco.</p>
+                        <a href="tienda.html" class="btn btn-primary">Tienda</a>
+                    </div>
+                </div>
+    
+                <div class="todas-las-card">
+                    <iframe src="https://www.youtube.com/embed/XQR01PFIoXU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        Ver Video
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Técnica de colada</h5>
+                        <p class="card-text">Moldeá piezas vertiendo barbotina en moldes.</p>
+                        <a href="tienda.html" class="btn btn-primary">Tienda</a>
+                    </div>
+                </div>
+    
+                <div class="todas-las-card">
+                    <iframe src="https://www.youtube.com/embed/w47SZLN9wN4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        Ver Video
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Técnica de torno</h5>
+                        <p class="card-text">Creá formas con el giro y precisión del torno.</p>
+                        <a href="tienda.html" class="btn btn-primary">Tienda</a>
+                    </div>
+                </div>
+    
+                <div class="todas-las-card">
+                    <iframe src="https://www.youtube.com/embed/knbytyWoYGI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        Ver Video
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Técnica con contramoldes</h5>
+                        <p class="card-text">Replicá piezas usando moldes secundarios.</p>
+                        <a href="tienda.html" class="btn btn-primary">Tienda</a>
+                    </div>
                 </div>
             </div>
-
-            <div class="todas-las-card">
-                <iframe src="https://www.youtube.com/embed/XQR01PFIoXU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    Ver Video
-                </a>
-                <div class="card-body">
-                    <h5 class="card-title">Técnica de colada</h5>
-                    <p class="card-text">Moldeá piezas vertiendo barbotina en moldes.</p>
-                    <a href="tienda.html" class="btn btn-primary">Tienda</a>
-                </div>
-            </div>
-
-            <div class="todas-las-card">
-                <iframe src="https://www.youtube.com/embed/w47SZLN9wN4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    Ver Video
-                </a>
-                <div class="card-body">
-                    <h5 class="card-title">Técnica de torno</h5>
-                    <p class="card-text">Creá formas con el giro y precisión del torno.</p>
-                    <a href="tienda.html" class="btn btn-primary">Tienda</a>
-                </div>
-            </div>
-
-            <div class="todas-las-card">
-                <iframe src="https://www.youtube.com/embed/knbytyWoYGI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    Ver Video
-                </a>
-                <div class="card-body">
-                    <h5 class="card-title">Técnica con contramoldes</h5>
-                    <p class="card-text">Replicá piezas usando moldes secundarios.</p>
-                    <a href="tienda.html" class="btn btn-primary">Tienda</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Información adicional -->
-    <section class="text-container-aditional">
-        <p>Hacemos talleres todos los días de Lunes a Viernes.</p>
-        <p>Un sábado por mes hay talleres para quienes tienen o no experiencia.</p>
-        <p>Podés comprarlo acá o enviarme un WhatsApp.</p>
-    </section>
+        </section>
+    
+        <!-- Información adicional -->
+        <section class="text-container-aditional">
+            <p>Hacemos talleres todos los días de Lunes a Viernes.</p>
+            <p>Un sábado por mes hay talleres para quienes tienen o no experiencia.</p>
+            <p>Podés comprarlo acá o enviarme un WhatsApp.</p>
+        </section>
+    </main>
     
     <footer>
         <!-- Esta section me redirige a todas las pestañas para no volver a subir -->
         <section class="footer-container">
             <div class="footer-column">
-                <h5>Categorías</h5>
+                <h4>Categorías</h4>
                 <ul class="enlaces-footer">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="tienda.html">Tienda</a></li>
                     <li><a href="talleres.html">Talleres</a></li>
                     <li><a href="sobremi.html">Sobre mí</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="ubicacion.html">Ubicación</a></li>
+                    <li><a href="contactoubi.html">Contacto</a></li>
                 </ul>
             </div>
             <hr class="footer-divider">
     
             <!-- Medios de pago -->
             <div class="footer-column">
-                <h5>Métodos de pago</h5>
+                <h4>Métodos de pago</h4>
                 <p>Aceptamos:</p>
                 <i class="fa-brands fa-cc-visa"></i>
                 <i class="fa-brands fa-cc-mastercard"></i>
@@ -167,7 +169,7 @@
     
             <!-- Contacto -->
             <div class="footer-column">
-                <h5>Contactame</h5>
+                <h4>Contactame</h4>
                 <i class="fa-brands fa-whatsapp"></i>
                 <p>+543548695432</p>
                 <i class="fa-regular fa-envelope"></i>
@@ -177,7 +179,7 @@
     
             <!-- Redes Sociales -->
             <div class="footer-column">
-                <h5>Síguenos en redes sociales:</h5>
+                <h4>Síguenos en redes sociales:</h4>
                 <i class="fa-brands fa-square-facebook"></i>
                 <i class="fa-brands fa-square-instagram"></i>
                 <i class="fa-brands fa-square-pinterest"></i>

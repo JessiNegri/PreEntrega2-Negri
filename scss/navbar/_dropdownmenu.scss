@@ -1,0 +1,32 @@
+/*Menú desplegable de tienda*/
+.submenu-container {
+    position: relative;
+    &.submenu-container:hover .submenu {
+        display: block;
+    }
+}
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: var(--color-secundario);
+    padding: 10px;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    width: 150px;
+    z-index: 100; /*Para que no se esconda abajo de otros elementos*/
+    a {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        padding: 8px 10px;
+        transition: background-color 0.3s ease;
+        &a:hover {
+            background-color: var(--color-secundario);
+        }
+    }    
+}
+
+
+
+
